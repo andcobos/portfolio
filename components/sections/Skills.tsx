@@ -2,6 +2,29 @@
 
 import React, { forwardRef } from "react";
 
+const skillGroups = [
+  {
+    title: "Frontend",
+    skills: ["JavaScript", "TypeScript", "React", "Next.js"],
+  },
+  {
+    title: "Backend",
+    skills: ["Node.js", "NestJS", "Laravel", "RESTful APIs", "Postman"],
+  },
+  {
+    title: "Databases",
+    skills: ["PostgreSQL", "MongoDB", "MySQL", "Firebase"],
+  },
+  {
+    title: "Cloud Computing",
+    skills: ["Google Cloud Platform", "Virtual Machines", "Cloud Deployment"],
+  },
+  {
+    title: "Tools & Others",
+    skills: ["Figma", "Agile / Scrum", "GCP (básico)", "Design Thinking"],
+  },
+];
+
 export const Skills = forwardRef<HTMLElement>((_, ref) => {
   return (
     <section ref={ref} id="skills" className="py-20 px-6 bg-white">
@@ -12,32 +35,26 @@ export const Skills = forwardRef<HTMLElement>((_, ref) => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[
-            { name: "JavaScript", level: 90, color: "emerald" },
-            { name: "React", level: 85, color: "purple" },
-            { name: "Node.js", level: 80, color: "orange" },
-            { name: "Python", level: 75, color: "pink" },
-            { name: "TypeScript", level: 85, color: "emerald" },
-            { name: "Next.js", level: 80, color: "purple" },
-            { name: "MongoDB", level: 70, color: "orange" },
-            { name: "PostgreSQL", level: 75, color: "pink" },
-          ].map((skill, index) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {skillGroups.map((group, index) => (
             <div
               key={index}
-              className="scroll-animate opacity-0 transform translate-y-8 transition-all duration-700 group"
+              className="scroll-animate opacity-0 transform translate-y-8 transition-all duration-700"
             >
               <div className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex justify-between items-center mb-3">
-                  <span className="font-semibold text-gray-900">{skill.name}</span>
-                  <span className="text-sm text-gray-600">{skill.level}%</span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    className={`bg-gradient-to-r from-${skill.color}-400 to-${skill.color}-600 h-2 rounded-full transition-all duration-1000 group-hover:scale-105`}
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
-                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  {group.title}
+                </h3>
+                <ul className="space-y-2">
+                  {group.skills.map((skill, idx) => (
+                    <li
+                      key={idx}
+                      className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full inline-block text-sm"
+                    >
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
