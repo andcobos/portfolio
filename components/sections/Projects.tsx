@@ -25,13 +25,13 @@ export const Projects = forwardRef<HTMLElement>((_, ref) => {
           {projects.map((project, index) => (
             <article
               key={index}
-              className="scroll-animate opacity-0 translate-y-8 transition-all duration-700 group hover:shadow-2xl hover:-translate-y-4 overflow-hidden rounded-2xl bg-[#1B2432] border border-[#334155] pointer-events-auto"
+              className="scroll-animate opacity-0 translate-y-8 transition-all duration-700 group hover:shadow-2xl hover:-translate-y-4 overflow-hidden rounded-2xl bg-[#1B2432] border border-[#202835] hover:border-[#273141] pointer-events-auto"
             >
               {/* Screenshot estático */}
               <div className="relative">
                 <ScreenshotFrame
                   title={project.title}
-                  thumbnail={project.thumbnail} // 👈 solo imagen
+                  thumbnail={project.thumbnail} 
                 />
 
                 {/* Acciones encima del screenshot */}

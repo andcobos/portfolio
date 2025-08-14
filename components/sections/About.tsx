@@ -69,7 +69,7 @@ export const About = forwardRef<HTMLElement>((_, ref) => {
               key={i}
               className="scroll-animate opacity-0 translate-y-8 transition-all duration-700 
                         group hover:shadow-xl hover:-translate-y-2 
-                        bg-[#1B2432] border border-[#334155] 
+                        bg-[#1B2432] border border-[#202835] hover:border-[#273141] 
                         rounded-xl hover:bg-[#202A3A]"
             >
               <CardContent className="p-8 text-center">
