@@ -12,7 +12,7 @@ export const projects: Project[] = [
   {
     title: "E-Commerce Platform",
     description: "Full-stack e-commerce solution with React, NextJS, and MongoDB",
-    tech: ["React", "NextJS", "PostgreSQL"],
+    tech: ["React", "NextJS", "NeonDB"],
     gradient: "from-emerald-400 to-emerald-600",
     github: "https://github.com/andcobos/ecommerceproject_andreacobos",
     website: "https://prostoremusic-andreacobos.vercel.app",

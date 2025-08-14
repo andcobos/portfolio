@@ -1,36 +1,14 @@
 "use client";
 
 import React, { forwardRef } from "react";
-
-const skillGroups = [
-  {
-    title: "Frontend",
-    skills: ["JavaScript", "TypeScript", "React", "Next.js"],
-  },
-  {
-    title: "Backend",
-    skills: ["Node.js", "NestJS", "Laravel", "RESTful APIs", "Postman"],
-  },
-  {
-    title: "Databases",
-    skills: ["PostgreSQL", "MongoDB", "MySQL", "Firebase"],
-  },
-  {
-    title: "Cloud Computing",
-    skills: ["Google Cloud Platform", "Virtual Machines", "Cloud Deployment"],
-  },
-  {
-    title: "Tools & Others",
-    skills: ["Figma", "Agile / Scrum", "GCP (básico)", "Design Thinking"],
-  },
-];
+import { skillGroups } from "@/constants/skills"; // importa tu constante
 
 export const Skills = forwardRef<HTMLElement>((_, ref) => {
   return (
-    <section ref={ref} id="skills" className="py-20 px-6 bg-white">
+    <section ref={ref} id="skills" className="py-20 px-6 bg-[#0A0F1F]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="scroll-animate opacity-0 transform translate-y-8 transition-all duration-700 text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="scroll-animate opacity-0 transform translate-y-8 transition-all duration-700 text-4xl font-bold text-[#F3F4F6] mb-4">
             Skills & Technologies
           </h2>
         </div>
@@ -41,15 +19,15 @@ export const Skills = forwardRef<HTMLElement>((_, ref) => {
               key={index}
               className="scroll-animate opacity-0 transform translate-y-8 transition-all duration-700"
             >
-              <div className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+              <div className="bg-[#1B2432] border border-[#334155] rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                <h3 className="text-xl font-semibold text-[#F3F4F6] mb-4">
                   {group.title}
                 </h3>
-                <ul className="space-y-2">
+                <ul className="flex flex-wrap gap-2">
                   {group.skills.map((skill, idx) => (
                     <li
                       key={idx}
-                      className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full inline-block text-sm"
+                      className="px-3 py-1 rounded-full bg-[#334155] text-[#F3F4F6] text-sm"
                     >
                       {skill}
                     </li>
