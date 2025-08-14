@@ -30,7 +30,6 @@
   }
 }
 
-/* Custom gradient backgrounds for skill bars */
 .bg-gradient-to-r.from-emerald-400.to-emerald-600 {
   background: linear-gradient(to right, #34d399, #059669);
 }
@@ -45,4 +44,8 @@
 
 .bg-gradient-to-r.from-pink-400.to-pink-600 {
   background: linear-gradient(to right, #f472b6, #db2777);
+}
+
+.scroll-animate {
+  pointer-events: auto; /* <<-- clave */
 }
