@@ -5,7 +5,7 @@ export const skillGroups = [
   },
   {
     title: "Backend",
-    skills: ["Node.js", "NestJS", "Laravel", "RESTful APIs", "Postman"],
+    skills: ["Node.js", "NestJS", "Laravel", "RESTful APIs"],
   },
   {
     title: "Databases",
@@ -13,10 +13,10 @@ export const skillGroups = [
   },
   {
     title: "Cloud Computing",
-    skills: ["Google Cloud Platform", "Virtual Machines", "Cloud Deployment"],
+    skills: ["Google Cloud Platform", "Virtual Machines", "Cloud Architecture"],
   },
   {
     title: "Tools & Others",
-    skills: ["Figma", "Agile / Scrum", "GCP (básico)", "Design Thinking"],
+    skills: ["Figma", "Agile / Scrum", "Postman", "Design Thinking"],
   },
 ];

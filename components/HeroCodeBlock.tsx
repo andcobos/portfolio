@@ -3,15 +3,14 @@
 import { useState, useEffect } from "react";
 
 export default function HeroCodeBlock() {
-  // Líneas con "syntax highlighting" usando spans y clases de Tailwind
   const codeLines: string[] = [
-    `<span class="text-gray-500">// ¡Hola, soy Andrea Cobos!</span>`,
-    `<span class="text-gray-500">// Estudiante de <span class="text-purple-400">Ingeniería De Software</span> y <span class="text-purple-400">Negocios Digitales</span></span>`,
-    `<span class="text-gray-500">// Bienvenido a mi portafolio.</span>`,
+    `<span class="text-gray-500">// ¡Hello, I am Andrea Cobos!</span>`,
+    `<span class="text-gray-500">// Student of <span class="text-purple-400">Software Engineering</span> and <span class="text-purple-400">Digital Business</span></span>`,
+    `<span class="text-gray-500">// Welcome to my portfolio.</span>`,
     ``,
-    `<span class="text-blue-400">const</span> <span class="text-green-300">nombre</span> = <span class="text-yellow-300">'Andrea Cobos'</span>;`,
-    `<span class="text-blue-400">const</span> <span class="text-green-300">mensaje</span> = <span class="text-yellow-300">\`¡Bienvenido a mi sitio web!\`</span>;`,
-    `<span class="text-purple-400">console</span>.<span class="text-blue-300">log</span>(<span class="text-green-300">mensaje</span>);`,
+    `<span class="text-blue-400">const</span> <span class="text-green-300">name</span> = <span class="text-yellow-300">'Andrea Cobos'</span>;`,
+    `<span class="text-blue-400">const</span> <span class="text-green-300">message</span> = <span class="text-yellow-300">\`¡Welcome to my website!\`</span>;`,
+    `<span class="text-purple-400">console</span>.<span class="text-blue-300">log</span>(<span class="text-green-300">message</span>);`,
   ];
 
   const [displayedText, setDisplayedText] = useState("");
@@ -23,7 +22,7 @@ export default function HeroCodeBlock() {
       setDisplayedText((prev) => prev + (fullText[index] ?? ""));
       index++;
       if (index >= fullText.length) clearInterval(interval);
-    }, 18); // velocidad en ms por carácter
+    }, 18); 
     return () => clearInterval(interval);
   }, [fullText]);
 

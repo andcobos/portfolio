@@ -17,7 +17,7 @@ export const Projects = forwardRef<HTMLElement>((_, ref) => {
             Featured Projects
           </h2>
           <p className="scroll-animate opacity-0 translate-y-8 transition-all duration-700 text-xl text-[#94A3B8]">
-            Here are some of my recent projects that showcase my skills and creativity.
+            Here are some of my projects that showcase my skills and creativity.
           </p>
         </div>
 
@@ -27,7 +27,7 @@ export const Projects = forwardRef<HTMLElement>((_, ref) => {
               key={index}
               className="scroll-animate opacity-0 translate-y-8 transition-all duration-700 group hover:shadow-2xl hover:-translate-y-4 overflow-hidden rounded-2xl bg-[#1B2432] border border-[#334155] pointer-events-auto"
             >
-              {/* Screenshot estático (sin iframe) */}
+              {/* Screenshot estático */}
               <div className="relative">
                 <ScreenshotFrame
                   title={project.title}

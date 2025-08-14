@@ -1,7 +1,7 @@
 "use client";
 
 import React, { forwardRef } from "react";
-import { skillGroups } from "@/constants/skills"; // importa tu constante
+import { skillGroups } from "@/constants/skills";
 
 export const Skills = forwardRef<HTMLElement>((_, ref) => {
   return (
@@ -19,7 +19,10 @@ export const Skills = forwardRef<HTMLElement>((_, ref) => {
               key={index}
               className="scroll-animate opacity-0 transform translate-y-8 transition-all duration-700"
             >
-              <div className="bg-[#1B2432] border border-[#334155] rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+              <div
+                className="bg-[#1B2432] border border-[#334155] rounded-xl p-6 
+                          hover:shadow-lg hover:scale-105 transition-transform transition-shadow duration-300"
+              >
                 <h3 className="text-xl font-semibold text-[#F3F4F6] mb-4">
                   {group.title}
                 </h3>

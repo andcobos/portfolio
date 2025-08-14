@@ -19,13 +19,13 @@ export const Contact = forwardRef<HTMLElement>((_, ref) => {
 
                 <div className="flex justify-center space-x-6 mb-12">
                     <a href="mailto:andcobos@icloud.com">
-                        <Button className="bg-[#1E40AF] hover:bg-[#2563EB] text-[#F3F4F6] p-4 rounded-full transform hover:scale-110 transition-all duration-200">
+                        <Button className="bg-[#1B2432] hover:bg-[#334155] text-[#F3F4F6] p-4 rounded-full transform hover:scale-110 transition-all duration-200">
                             <Mail className="w-6 h-6" />
                         </Button>
                     </a>
 
                     <a href="https://www.linkedin.com/in/andrea-cobos/" target="_blank" rel="noopener noreferrer">
-                        <Button className="bg-[#1E40AF] hover:bg-[#2563EB] text-[#F3F4F6] p-4 rounded-full transform hover:scale-110 transition-all duration-200">
+                        <Button className="bg-[#1B2432] hover:bg-[#334155] text-[#F3F4F6] p-4 rounded-full transform hover:scale-110 transition-all duration-200">
                             <Linkedin className="w-6 h-6" />
                         </Button>
                     </a>
@@ -37,7 +37,7 @@ export const Contact = forwardRef<HTMLElement>((_, ref) => {
                     </a>
                 </div>
 
-                <Button className="bg-gradient-to-r from-[#1E40AF] to-[#2563EB] text-[#F3F4F6] px-12 py-4 rounded-lg text-lg transform hover:scale-105 transition-all duration-200">
+                <Button className="bg-gradient-to-r from-[#1E40AF] to-[#2563EB] text-[#F3F4F6] px-12 py-4 rounded-lg text-lg transform transition-all duration-200">
                     Get In Touch
                 </Button>
             </div>

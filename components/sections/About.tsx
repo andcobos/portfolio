@@ -58,7 +58,8 @@ export const About = forwardRef<HTMLElement>((_, ref) => {
             About Me
           </h2>
           <p className="scroll-animate opacity-0 translate-y-8 transition-all duration-700 text-xl text-[#94A3B8] max-w-3xl mx-auto">
-            I'm a Junior Software Engineer with experience in full-stack development, PostgreSQL, and RESTful APIs. I also work with UX/UI design in Figma, testing, Agile methods, and BI.
+            I am a Junior Software Engineer with experience in web development, PostgreSQL, and building RESTful APIs. I also have expertise 
+            in UX/UI design using Figma, software testing, and Agile methodologies, along with a solid understanding of business intelligence concepts.
           </p>
         </div>
 
@@ -66,11 +67,14 @@ export const About = forwardRef<HTMLElement>((_, ref) => {
           {items.map(({ title, icon: Icon, description, iconColor }, i) => (
             <Card
               key={i}
-              className="scroll-animate opacity-0 translate-y-8 transition-all duration-700 group hover:shadow-xl hover:-translate-y-2 bg-[#1B2432] border border-[#334155]"
+              className="scroll-animate opacity-0 translate-y-8 transition-all duration-700 
+                        group hover:shadow-xl hover:-translate-y-2 
+                        bg-[#1B2432] border border-[#334155] 
+                        rounded-xl hover:bg-[#202A3A]"
             >
               <CardContent className="p-8 text-center">
                 {/* Contenedor del icono: fondo sutil + ring azul */}
-                <div className="w-16 h-16 rounded-xl mx-auto mb-6 flex items-center justify-center bg-white/5 ring-1 ring-[#334155] group-hover:ring-[#2563EB] transition">
+                <div className="w-16 h-16 rounded-xl mx-auto mb-6 flex items-center justify-center bg-white/5 ring-1 ring-[#334155] group-hover:ring-[#202835] transition">
                   <Icon className={`w-8 h-8 ${iconColor}`} />
                 </div>
 

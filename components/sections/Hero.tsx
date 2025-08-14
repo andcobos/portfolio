@@ -23,9 +23,11 @@ export const Hero = forwardRef<HTMLElement>((_, ref) => {
                             Passionate about creating innovative solutions and building exceptional digital experiences.
                         </p>
                         <div className="scroll-animate opacity-0 transform translate-y-8 transition-all duration-700 flex space-x-4">
-                            <Button className="bg-[#1E40AF] hover:bg-[#2563EB] text-[#F3F4F6] px-8 py-3 rounded-lg transform hover:scale-105 transition-all duration-200">
-                                View Projects
-                            </Button>
+                            <a href="#projects">
+                                <Button className="bg-[#1E40AF] hover:bg-[#2563EB] text-[#F3F4F6] px-8 py-3 rounded-xl transform hover:scale-105 transition-all duration-200">
+                                    View Projects
+                                </Button>
+                            </a>
 
                             <a
                                 href="/andrea_cobos_resume.pdf"
@@ -34,12 +36,11 @@ export const Hero = forwardRef<HTMLElement>((_, ref) => {
                             >
                                 <Button
                                     variant="outline"
-                                    className="border-[#334155] text-[#F3F4F6] hover:bg-[#1B2432] px-8 py-3 rounded-lg transform hover:scale-105 transition-all duration-200"
+                                    className="border-[#334155] text-[#F3F4F6] hover:bg-[#1B2432] px-8 py-3 rounded-xl transform hover:scale-105 transition-all duration-200"
                                 >
                                     Download CV
                                 </Button>
                             </a>
-
                         </div>
                     </div>
 
