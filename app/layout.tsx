@@ -21,14 +21,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://portfolio-andcobos.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-domain.com",
+    url: "https://portfolio-andcobos.vercel.app",
     title: "Andrea Cobos - Software Developer Portfolio",
     description:
       "Passionate software developer specializing in full-stack web development, mobile apps, and modern technologies.",
@@ -38,17 +38,9 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "John Doe - Software Developer Portfolio",
+        alt: "Andrea Cobos - Software Developer Portfolio",
       },
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Andrea Cobos - Software Developer Portfolio",
-    description:
-      "Passionate software developer specializing in full-stack web development, mobile apps, and modern technologies.",
-    creator: "@yourtwitterhandle",
-    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -93,11 +85,10 @@ export default function RootLayout({
               jobTitle: "Software Developer",
               description:
                 "Passionate software developer specializing in full-stack web development, mobile apps, and modern technologies.",
-              url: "https://your-domain.com",
+              url: "https://portfolio-andcobos.vercel.app",
               sameAs: [
-                "https://github.com/yourusername",
-                "https://linkedin.com/in/yourusername",
-                "https://twitter.com/yourusername",
+                "https://github.com/andcobos",
+                "https://www.linkedin.com/in/andrea-cobos",
               ],
               knowsAbout: [
                 "JavaScript",
@@ -111,7 +102,7 @@ export default function RootLayout({
               ],
               alumniOf: {
                 "@type": "EducationalOrganization",
-                name: "Your University",
+                name: "ESEN - Escuela Superior de Economía y Negocios",
               },
             }),
           }}

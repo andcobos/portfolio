@@ -24,7 +24,7 @@ export const projects: Project[] = [
     tech: ["NextJS", "Typescript", "v0"],
     gradient: "from-purple-400 to-purple-600",
     github: "https://github.com/andcobos/survival-website",
-    website: "https://survival-website.vercel.app",
+    website: "https://tactival.vercel.app",
     thumbnail: "/screenshots/tactival.png",
   },
   {
