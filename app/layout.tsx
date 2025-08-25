@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import ClickSparkWrapper from "@/components/ClickSparkWrapper" 
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -59,11 +60,7 @@ export const metadata: Metadata = {
     generator: 'v0.dev'
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -74,7 +71,9 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={inter.className}>
-        {children}
+        <ClickSparkWrapper>
+          {children}
+        </ClickSparkWrapper>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
