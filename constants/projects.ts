@@ -11,7 +11,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with React, NextJS, and MongoDB",
+    description: "E-commerce solution, full-stack website built with Next.js, React, and MongoDB, designed to showcase the complete development of an online store from front to back. It serves as a practical demonstration of integrating these technologies to create a functional and dynamic application, following the detailed steps provided in an O'Reilly course by Brad Traversy.",
     tech: ["React", "NextJS", "NeonDB"],
     gradient: "from-emerald-400 to-emerald-600",
     github: "https://github.com/andcobos/ecommerceproject_andreacobos",
@@ -28,12 +28,12 @@ export const projects: Project[] = [
     thumbnail: "/screenshots/tactival.png",
   },
   {
-    title: "Weather Dashboard",
-    description: "Beautiful weather app with location-based forecasts",
-    tech: ["React", "API Integration", "Chart.js"],
+    title: "Website ESEN - Knowledge Center",
+    description: "Website for students and administrators. Students can request study rooms and books and pay loans. The administrator can add students, review requests and asign loans. Login as student: 20235111. Log in as admin: admin123",
+    tech: ["NextJS", "Firebase", "Tailwind"],
     gradient: "from-orange-400 to-orange-600",
     github: "https://github.com/andcobos/weatherapp",
-    website: "https://weather-dashboard-demo.vercel.app",
-    thumbnail: "/screenshots/weather.png",
+    website: "https://centro-conocimiento-sitioweb.vercel.app",
+    thumbnail: "/screenshots/knowledgecenter.png",
   },
 ];
