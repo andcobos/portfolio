@@ -17,6 +17,6 @@ export const skillGroups = [
   },
   {
     title: "Tools & Others",
-    skills: ["Figma", "Agile / Scrum", "Postman", "Design Thinking"],
+    skills: ["Figma", "Agile / Scrum", "Postman", "Design Thinking, Business Ingtelligence"],
   },
 ];
