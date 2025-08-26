@@ -19,6 +19,12 @@ export const NavBar = () => {
             <a href="#skills" className="text-[#94A3B8] hover:text-[#1E40AF] transition-colors">
               Skills
             </a>
+            <a
+              href="#get-to-know-me"
+              className="text-[#94A3B8] hover:text-[#1E40AF] transition-colors"
+            >
+              Get to know me
+            </a>
             <a href="#contact" className="text-[#94A3B8] hover:text-[#1E40AF] transition-colors">
               Contact
             </a>

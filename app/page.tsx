@@ -4,21 +4,21 @@ import { Hero } from "@/components/sections/Hero"
 import { About } from "@/components/sections/About"
 import { Projects } from "@/components/sections/Projects"
 import { Skills } from "@/components/sections/Skills"
+import GetToKnowMe from "@/components/sections/GetToKnowMe"  
 import { Contact } from "@/components/sections/Contacts"
 import { NavBar } from "@/components/sections/NavBar"
-import { Footer } from "@/components/sections/Footer";
-
+import { Footer } from "@/components/sections/Footer"
 
 export default function Portfolio() {
   const heroRef = useRef<HTMLElement>(null)
   const aboutRef = useRef<HTMLElement>(null)
   const projectsRef = useRef<HTMLElement>(null)
   const skillsRef = useRef<HTMLElement>(null)
+  const knowMeRef = useRef<HTMLElement>(null)  
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY
-      const sections = [heroRef, aboutRef, projectsRef, skillsRef]
+      const sections = [heroRef, aboutRef, projectsRef, skillsRef, knowMeRef]
 
       sections.forEach((ref) => {
         if (ref.current) {
@@ -41,22 +41,22 @@ export default function Portfolio() {
     }
 
     window.addEventListener("scroll", handleScroll)
-    handleScroll() 
-
+    handleScroll()
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100">
-      < NavBar />
+      <NavBar />
       <main>
-        < Hero ref={heroRef} />
-        < About ref={aboutRef} />
-        < Projects ref={projectsRef} />
-        < Skills ref={skillsRef} />
-        < Contact ref={useRef<HTMLElement>(null)} />
+        <Hero ref={heroRef} />
+        <About ref={aboutRef} />
+        <Projects ref={projectsRef} />
+        <Skills ref={skillsRef} />
+        <GetToKnowMe ref={knowMeRef} />
+        <Contact ref={useRef<HTMLElement>(null)} />
       </main>
-      < Footer />
+      <Footer />
     </div>
   )
 }
