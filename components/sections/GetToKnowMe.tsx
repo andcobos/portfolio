@@ -23,11 +23,10 @@ const GetToKnowMe = forwardRef<HTMLElement>((_, ref) => {
           <p className="mx-auto max-w-2xl text-[#94A3B8] leading-relaxed">
             I am a <span className="font-semibold">Software Engineering</span> and{" "}
             <span className="font-semibold">Digital Business</span> student at the{" "}
-            <span className="font-semibold">Escuela Superior de Economía y Negocios (ESEN)</span>,
-            passionate about building technology that creates meaningful impact. Outside of university
-            and work, you can often find me playing soccer, climbing, or exploring natural parks.
-            I also enjoy photography and drone videography, unwinding with a good series, making music
-            with different instruments, and spending time with my pets.
+            <span className="font-semibold">Escuela Superior de Economía y Negocios (ESEN)</span>.
+            I'm a passionate software developer focused on building technology that makes a 
+            meaningful impact. In my free time, I enjoy a variety of activities that help me 
+            unwind and stay creative.
           </p>
         </header>
 

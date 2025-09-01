@@ -29,7 +29,7 @@ export const projects: Project[] = [
   },
   {
     title: "Website ESEN - Knowledge Center",
-    description: "Website for students and administrators. Students can request study rooms and books and pay loans. The administrator can add students, review requests and asign loans. Login as student: 20235111. Log in as admin: admin123",
+    description: "Website for students and administrators. Students can request study rooms and books and pay loans. The administrator can add students, review requests and asign loans.",
     tech: ["NextJS", "Firebase", "Tailwind"],
     gradient: "from-orange-400 to-orange-600",
     github: "https://github.com/andcobos/weatherapp",
